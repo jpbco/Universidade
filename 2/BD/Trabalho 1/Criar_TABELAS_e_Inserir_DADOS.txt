@@ -1,0 +1,153 @@
+--João Cavaco 42470
+
+--Exercicio 2
+
+drop table if exists ESPECIE cascade;
+
+drop table if exists ANIMAL cascade;
+
+drop table if exists COMPARTIMENTO cascade;
+
+drop table if exists TRATADOR cascade;
+
+drop table if exists ALOJADO cascade;
+
+drop table if exists TRATA cascade;
+
+
+create table ESPECIE ( 
+    NomeE varchar(20) primary key,
+    Classe varchar(20)
+);
+
+create table ANIMAL ( 
+    NomeA varchar(20) primary key,
+    Genero varchar(15), 
+    NomeE varchar(20),
+	foreign key (NomeE) references ESPECIE(NomeE) on  delete cascade  
+);
+
+create table COMPARTIMENTO (
+    IdComp smallint primary key,
+    Tipo varchar(20)
+);
+
+create table TRATADOR (
+    NCC smallint primary key,
+    NomeT varchar(25),
+    Salário smallint,
+    NCCChefe smallint
+);
+
+create table ALOJADO (
+   NomeA varchar(25),
+   IdComp smallint,
+   primary key (NomeA,IdComp),
+   foreign key (NomeA) references ANIMAL(NomeA) on delete cascade,
+   foreign key (IdComp) references COMPARTIMENTO(IdComp) on delete restrict
+);
+
+create table TRATA ( 
+	IdComp smallint,
+	NCC smallint,
+	primary key (IdComp,NCC),
+	foreign key (IdComp) references COMPARTIMENTO(IdComp) on delete restrict,
+	foreign key (NCC) references TRATADOR(NCC) on delete cascade
+);
+	
+
+
+
+--Exercício 3
+
+--Espécies-
+
+insert into ESPECIE values ('Foca','Mamifero');
+insert into ESPECIE values ('Leao Marinho','Mamifero');
+insert into ESPECIE values ('lontra','Mamifero');
+insert into ESPECIE values ('Tigre','Mamifero');
+insert into ESPECIE values ('Tartaruga','Reptil');
+insert into ESPECIE values ('Lagartixa','Reptil');
+insert into ESPECIE values ('Lagarto','Reptil');
+insert into ESPECIE values ('Papagaio','Ave');
+insert into ESPECIE values ('Arara','Ave');
+
+--Animais--
+
+insert into ANIMAL values('Kiki','Feminino','Foca');
+insert into ANIMAL values('Lola','Feminino','Foca');
+insert into ANIMAL values('Anibal','Masculino','Leao Marinho');
+insert into ANIMAL values('Amalia','Feminino','lontra');
+insert into ANIMAL values('Eusebio','Masculino','lontra');
+insert into ANIMAL values('Jau','Masculino','Tigre');
+insert into ANIMAL values('Princesa','Feminino','Tigre');
+insert into ANIMAL values('Huga','Feminino','Tartaruga');
+insert into ANIMAL values('Luna','Feminino','Tartaruga');
+insert into ANIMAL values('Brava','Feminino','Lagartixa');
+insert into ANIMAL values('Raul','Masculino','Lagarto');
+insert into ANIMAL values('Pirata','Masculino','Papagaio');
+insert into ANIMAL values('Bela','Feminino','Papagaio');
+insert into ANIMAL values ('Joia','Feminino','Arara');
+
+
+--Compartimentos--
+
+insert into COMPARTIMENTO values ('23','charco');
+insert into COMPARTIMENTO values ('10','Selva');
+insert into COMPARTIMENTO values ('8','Pantano');
+insert into COMPARTIMENTO values ('15','Gaiola');
+
+--Tratadores--
+
+insert into TRATADOR values ('123','Manuel','750','124');
+insert into TRATADOR values ('124','Luis','850');
+insert into TRATADOR values ('125','Maria','850','124');
+
+
+--Alojados--
+
+insert into ALOJADO values ('Kiki','23');
+insert into ALOJADO values ('Lola','23');
+insert into ALOJADO values ('Anibal','23');
+insert into ALOJADO values ('Amalia','23');
+insert into ALOJADO values ('Eusebio','23');
+insert into ALOJADO values ('Jau','10');
+insert into ALOJADO values ('Princesa','10');
+insert into ALOJADO values ('Huga','8');
+insert into ALOJADO values ('Luna','8');
+insert into ALOJADO values ('Brava','8');
+insert into ALOJADO values ('Raul','8');
+insert into ALOJADO values ('Pirata','15');
+insert into ALOJADO values ('Bela','15');
+insert into ALOJADO values ('Joia','15');
+
+--TRATA--
+
+insert into TRATA values ('23','123');
+insert into TRATA values ('10','123');
+insert into TRATA values ('10','124');
+insert into TRATA values ('8','124');
+insert into TRATA values ('8','125');
+insert into TRATA values ('15','125');
+
+
+--Dados Inseridos pelo Aluno --
+--Exercício 4--
+
+insert into ANIMAL values ('Sherekan','Masculino','Tigre');
+insert into ANIMAL values ('BobMarley','Masculino','Tigre');
+insert into ANIMAL values ('Sting','Masculino','Tigre');
+insert into ANIMAL values ('Barroso','Masculino','Lagarto');
+insert into ANIMAL values ('Pintas','Masculino','Lagarto');
+insert into ANIMAL values ('Caloiro','Masculino','Lagarto');
+
+insert into TRATADOR values ('126','Toni','800','127');
+insert into TRATADOR values ('127','Zacarias','900');
+insert into ALOJADO values ('Sherekan','23');
+insert into ALOJADO values ('BobMarley','8');
+insert into ALOJADO values ('Sting','15');
+insert into ALOJADO values ('Barroso','10');
+insert into ALOJADO values ('Pintas','15');
+insert into ALOJADO values ('Caloiro','23');
+
+insert into TRATA values ('8','126');

@@ -1,0 +1,85 @@
+-- João Cavaco 42470
+
+a) Que espécies de animais se podem visitar no jardim zoologico?
+SELECT NomeE
+FROM ESPECIE
+
+
+b) Que classes de animais estão em compartimentos associados ao tratador com o nome
+Manuel?
+SELECT DISTINCT Classe
+FROM ESPECIE natural inner join ANIMAL natural inner join ALOJADO natural inner join TRATA natural inner join TRATADOR
+WHERE NomeT = 'Manuel'
+
+
+c) Quais os nomes dos Chefes dos tratadores de compartimentos com animais da classe
+réptil?
+SELECT NomeT
+FROM TRATADOR
+WHERE NCC in (SELECT DISTINCT NCCChefe
+FROM TRATADOR natural inner join TRATA natural inner join ALOJADO natural inner join ANIMAL natural inner join ESPECIE
+ WHERE Classe = 'Reptil')
+
+d) Que compartimentos não tem animais da classe Ave?
+SELECT DISTINCT idcomp
+FROM COMPARTIMENTO natural inner join TRATA natural inner join ALOJADO natural inner join ANIMAL natural inner join ESPECIE
+WHERE Classe != 'Ave'
+
+e) Que compartimentos têm Mamiferos e repteis?
+SELECT DISTINCT idcomp
+FROM COMPARTIMENTO natural inner join TRATA natural inner join ALOJADO natural inner join ANIMAL natural inner join ESPECIE
+WHERE Classe ='Mamifero' and Classe ='Reptil'
+
+f) Que tratadores não são responsáveis por gaiolas ou pantanos?
+SELECT  DISTINCT NomeT, tipo
+FROM COMPARTIMENTO natural inner join TRATA natural inner join TRATADOR natural inner join ALOJADO natural inner join ANIMAL natural inner join ESPECIE
+WHERE tipo != 'Gaiola' or tipo !='Pantano'
+
+g) Quantos animais da classe Mamifero tem o Jardim Zoologico?
+SELECT Count(NomeA) as Numero_Mamiferos
+FROM COMPARTIMENTO natural inner join TRATA natural inner join TRATADOR natural inner join ALOJADO natural inner join ANIMAL natural inner join ESPECIE
+Where Classe ='Mamifero'
+
+h) Para cada compartimento indique o número total de animais.
+SELECT  idcomp as Numero_Compartimento,count (nomea) as Numero_Animais
+FROM ALOJADO
+GROUP BY idcomp
+
+i) Para cada tratador indique o número total de Mamiferos que trata.
+SELECT nomeT,count(Classe)
+FROM TRATADOR natural inner join TRATA natural inner join ALOJADO natural inner join ANIMAL natural inner join ESPECIE
+WHERE Classe = 'Mamifero'
+group by nomeT
+
+(j) Que espécie tem um exemplar em todos os compartimentos do jardim zoologico?
+SELECT DISTINCT NomeE
+from COMPARTIMENTO natural inner join ALOJADO natural inner join ANIMAL
+group by NomeE
+having count( distinct idcomp) = (SELECT count(distinct Idcomp)
+FROM ALOJADO)
+
+(l) Qual é o compartimento que tem mais animais do género feminino?
+SELECT idcomp 
+FROM(SELECT count(Genero) as A,Idcomp
+FROM ANIMAL natural inner join ALOJADO
+WHERE Genero = 'Feminino'
+group by idcomp) as B
+WHERE A = (SELECT MAX(C)
+FROM(SELECT count(Genero) as C,Idcomp
+FROM ANIMAL natural inner join ALOJADO
+WHERE Genero = 'Feminino'
+group by idcomp) as D)
+
+(m) Retire todos os animais da espéciereptil do Jardim Zoologico
+DELETE 
+FROM ESPECIE
+WHERE Classe = 'Reptil'
+
+(n) Para cada Ave (classe) indique para cada compartimento o número de exemplares que
+estão no compartimento!
+
+Select IdComp,count(Classe)as N
+from ALOJADO natural inner join ANIMAL natural inner join ESPECIE 
+where Classe='Ave'
+group by IdComp
+
