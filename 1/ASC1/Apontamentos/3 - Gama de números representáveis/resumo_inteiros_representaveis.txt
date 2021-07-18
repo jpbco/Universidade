@@ -1,0 +1,16 @@
+Gama de numeros representaveis num registo
+
+ positivo num registo n bits = (2^n)-1
+
+O menor inteiro com sinal é 0b10000000 ou 0x80.
+
+O maior inteiro com sinal é 0b01111111 ou 0x7f.
+
+O maior inteiro sem sinal é 0b11111111 ou 0xff.
+
+intervalo de numeros sem sinal num registo de N bits =
+ 0,..,(2^N)-1
+
+intervalo de numeros com sinal num registo de N bits =
+
+-2^(N-1),...,2^(N-1)-1

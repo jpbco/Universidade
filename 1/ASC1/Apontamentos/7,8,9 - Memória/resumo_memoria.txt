@@ -1,0 +1,21 @@
+Capacidade de memória
+
+A capacidade de memória é a quantidade total de informação que a memória pode armazenar.
+Como a memória está organizada em bytes, a capacidade mede-se em bytes.
+
+Espaço de endereçamento
+O espaço de endereçamento é o conjunto de todos os endereços de memória de onde se pode ler e/ou escrever.
+
+Endereço de memória
+O endereço é um número que serve para localizar 
+um byte na memória.
+
+Byte
+A memória de um computador está organizada em bytes. 
+Cada byte consiste num pedaço de informação que ocupa uma
+posição de memória à qual está associada um endereço. 
+O endereço serve para localizar a informação na memória.
+
+Unidade de capacidade de memória
+A capacidade de memória é a quantidade total de informação que a memória pode armazenar. 
+Como em cada posição de memória está um byte (normalmente de 8 bits), a capacidade mede-se em bytes.

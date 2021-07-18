@@ -1,0 +1,84 @@
+\documentclass[titlepage,12pt]{article}   % tipo de documento e tamanho das letras
+
+% os seguintes pacotes estendem a funcionalidade básica:
+\usepackage[a4paper, total={16cm, 24cm}]{geometry} % tamanho da pagina e do texto
+\usepackage[portuguese]{babel}  % texto lingua portuguesa
+\usepackage{tikz}               % diagramas
+    \usetikzlibrary{shadows}
+\usepackage[colorlinks=true]{hyperref}           % links para partes do documento ou para a web
+\usepackage{listings}           % incluir codigo
+    \renewcommand\lstlistingname{Código}  % Listing em portugues
+    \lstset{numbers=left,
+            numberstyle=\tiny,
+            numbersep=5pt,
+            basicstyle=\footnotesize\ttfamily,
+            frame=tb,
+            rulesepcolor=\color{gray},
+            breaklines=true}
+\usepackage{titlepic}           % incluir imagem no titlo
+
+% ----------------------------------------------------------------------------
+\title{Trabalho Final - Fase 1}
+\author{João Cavaco\\nº 42470 \and António Barroso\\nº 44445}
+\date{\today}
+\titlepic{\includegraphics[]{logo}}
+
+% ----------------------------------------------------------------------------
+\begin{document}
+
+\maketitle
+\tableofcontents
+% ============================================================================
+\section{Introdução}
+
+Nesta primeira fase do trabalho desenvolvemos uma calculadora que opera na notação polaca inversa (RPN - Reverse Polish Notation) em linguagem C. A calculadora lê strings da consola, realiza as operações indicadas, mostra o estado da memória da calculadora na forma de uma pilha e opera sobre números inteiros ou em vírgula flutuante.
+% ============================================================================
+\section{Pilha}
+Para o desenvolvimento da calculadora utilizámos a estrutura de dados Pilha que foi implementada através da sua especificação em:
+\begin{lstlisting}[language={C}]
+typedef struct stack
+{
+    int capacity; // capacidade máxima da pilha
+    int top;      // indice do array que marca o topo da pilha
+    float *array; // array de elementos da pilha
+} stack_t;
+\end{lstlisting}
+e dos vários métodos: 
+\begin{description}
+  \item[$\bullet$ stack\_new(int capacity)] Aloca espaço na memória para a pilha e inicializa-a
+  \item[$\bullet$ stack\_size(stack\_t *stack)] Retorna um int que representa o tamanho da pilha
+  \item[$\bullet$ stack\_empty(stack\_t *stack)] Retorna um booleano que indica se a pilha está vazia
+  \item[$\bullet$ stack\_full(stack\_t *stack)] Retorna um booleano que indica se a pilha está cheia
+  \item[$\bullet$ stack\_push(stack\_t *stack, float x)] Empilha um elemento na pilha 
+  \item[$\bullet$ stack\_peek(stack\_t *stack)] Retorna o elemento no topo da pilha 
+  \item[$\bullet$ stack\_display(stack\_t *stack)] Mostra o estado da memória da calculadora
+  \item[$\bullet$ stack\_pop(stack\_t *stack)] Remove e retorna o elemento no topo da pilha  
+  \item[$\bullet$ stack\_destroy(stack\_t *stack)] Remove o espaço alocado para a pilha na memória
+\end{description}
+% ============================================================================
+\section{Funções}
+
+Estas funções estão descritas em maior detalhe nos comentários do programa.
+
+\begin{description}
+  \item[$\bullet$ add(stack\_t *stack)] Empilha o resultado da soma dos dois operandos do topo da pilha
+  \item[$\bullet$ subtract(stack\_t *stack)] Empilha o resultado da subtracção dos dois operandos do topo da pilha
+  \item[$\bullet$ divide(stack\_t *stack)] Empilha o resultado da divisão dos dois operandos do topo da pilha
+  \item[$\bullet$ multiply(stack\_t *stack)] Empilha o resultado da multiplicação dos dois operandos do topo da pilha
+  \item[$\bullet$ neg(stack\_t *stack)] Transforma o operando no topo da pilha no seu simétrico
+  \item[$\bullet$ swap(stack\_t *stack)] Troca a posição dos dois operandos do topo da pilha
+  \item[$\bullet$ dup(stack\_t *stack)] Duplica o operando do topo da pilha
+  \item[$\bullet$ drop(stack\_t *stack)] Elimina um operando do topo da pilha
+  \item[$\bullet$ clear(stack\_t *stack)] Limpa toda a pilha 
+  \item[$\bullet$ prompt()] Apresenta um texto no ínicio do programa
+  \item[$\bullet$ help()] Apresenta um texto de ajuda 
+  \item[$\bullet$ off()] Termina o programa
+
+\end{description}
+
+% ============================================================================
+\section{Conclusão}
+
+Esta primeira fase do trabalho foi bastante útil para a nossa aprendizagem pois permitiu-nos aprender um pouco mais sobre a estrutura de dados Pilha e as calculadoras de notação polaca inversa, o que nos ajudará sem dúvida na realização da próxima fase do trabalho.
+
+\end{document}

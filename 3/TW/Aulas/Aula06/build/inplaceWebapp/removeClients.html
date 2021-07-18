@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>The Restaurant</title>
+<meta charset="UTF-8">
+</head>
+<body>
+ 
+	<h3>Remove Clients</h3>
+	<form method="GET" action="removeClients">
+		<input type="submit">
+	</form>
+	<form method="POST" action="removeClients">>
+		<input type="text" id="remove-client-name" name="client_name"/>
+	<p>Waiting List: ${waitingListItems}</p>
+	        <input type="submit" id="remove-client-from-list-button"
+            value="Remove from waiting list" name="botao" />
+	<p>Dining Room: ${diningRoomListItems}</p>
+	        <input type="submit" id="remove-client-from-list-button"
+            value="Remove from dining room list" name="botao" />
+	<p>Terrace: ${terraceListItemss}</p>
+	        <input type="submit" id="remove-client-from-list-button"
+            value="Remove from terrace list" name="botao" />
+	</form>
+</body>
+</html>

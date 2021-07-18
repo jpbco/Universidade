@@ -1,0 +1,465 @@
+<html>
+
+<head>
+    <title> CG/3D </title>
+    <script type='text/javascript' src='http://www.x3dom.org/download/x3dom.js'> </script>
+    <link rel='stylesheet' type='text/css' href='http://www.x3dom.org/download/x3dom.css'>
+    </link>
+</head>
+
+<body>
+    <h1>João Cavaco - l42470@alunos.uevora.pt</h1>
+
+    <X3D width='1440px' height='768px'>
+
+
+
+        <Scene DEF='scene'>
+            <DirectionalLight id="directional" direction='0 -10 0' on="TRUE" intensity='1.0' shadowIntensity='0.0'>
+            </DirectionalLight>
+
+
+
+
+
+            <Transform translation=' 0 -2 -2'>
+                <!-- Textura #1-->
+                <CommonSurfaceShader id='madeira'>
+                    <ImageTexture containerField='diffuseTexture' url='media/wood.jpg'>
+                    </ImageTexture>
+                    <ImageTexture containerField='specularTexture' url='media/spec_wood.png'>
+                    </ImageTexture>
+                    <ImageTexture containerField='normalTexture' url='media/normal_wood.png'>
+                    </ImageTexture>
+                </CommonSurfaceShader>
+
+
+
+                <!-- Textura #2-->
+                <CommonSurfaceShader id='whitewood'>
+                    <ImageTexture containerField='diffuseTexture' url='media/whitewood.jpg'>
+                    </ImageTexture>
+                    <ImageTexture containerField='specularTexture' url='media/SpecularMap.png'>
+                    </ImageTexture>
+                    <ImageTexture containerField='normalTexture' url='media/NormalMap3.png'>
+                    </ImageTexture>
+                </CommonSurfaceShader>
+
+                <!-- Background grey-ish  -->
+                <Background skyColor='0.3 0.3 0.3'></Background>
+
+                <!-- Floor-->
+                <Transform translation='0 -3.7 -10'>
+                    <Shape>
+                        <Appearance>
+                            <X3DAppearanceChildNode use='madeira'>
+                            </X3DAppearanceChildNode>
+                        </Appearance>
+                        <Box size='30 0.2 30'></Box>
+                    </Shape>
+                </Transform>
+
+                <!-- 1st BOX  -->
+                <Transform DEF='1BOX'>
+                    <!-- 1st BOX 1st floor-->
+                    <Transform translation='-5 -3 -8'>
+                        <Group DEF='Caixa'>
+
+                            <Transform scale='1.5 1 1'>
+                                <Shape DEF='PANEL'>
+                                    <Appearance>
+                                        <X3DAppearanceChildNode use='whitewood'>
+                                        </X3DAppearanceChildNode>
+                                    </Appearance>
+                                    <Box size=' 2 0.1 2'></Box>
+
+                                </Shape>
+                            </Transform>
+                            <!-- top panel -->
+                            <Transform scale='1.5 1 1' translation='0 1.9 0 '>
+                                <Shape use='PANEL'></Shape>
+                            </Transform>
+                            <!-- back panel -->
+                            <Transform scale='1.5 1 1' translation='0 0.95 -1.05 ' rotation='1 0 0 1.5708'>
+                                <Shape use='PANEL'></Shape>
+                            </Transform>
+                            <!-- side panel-->
+                            <Transform scale='1 1 1.05' translation='-1.55 0.95 -0.05 ' rotation='0 0 1 1.5708'>
+                                <Shape use='PANEL'></Shape>
+                            </Transform>
+                            <!--right panel-->
+                            <Transform scale='1 1 1.05' translation='1.55 0.95 -0.05 ' rotation='0 0 1 1.5708'>
+                                <Shape use='PANEL'></Shape>
+                            </Transform>
+
+                        </Group>
+                    </Transform>
+
+                    <!-- 1st  BOX FEET-->
+                    <Transform translation='-5 -3 -8'>
+                        <Group id='FEET'>
+
+                            <Transform translation='-1.3 -0.3 -0.8' scale='0.1 0.3 0.1'>
+                                <Shape DEF='FOOT'>
+                                    <Appearance>
+                                        <X3DAppearanceChildNode use='whitewood'>
+                                        </X3DAppearanceChildNode>
+
+                                    </Appearance>
+                                    <Cylinder></Cylinder>
+                                </Shape>
+                            </Transform>
+
+                            <Transform translation='1.3 -0.3 -0.8' scale='0.1 0.3 0.1'>
+                                <Shape USE='FOOT'> </Shape>
+                            </Transform>
+
+                            <Transform translation='-1.3 -0.3 0.8' scale='0.1 0.3 0.1'>
+                                <Shape USE='FOOT'> </Shape>
+                            </Transform>
+
+                            <Transform translation='1.3 -0.3 0.8' scale='0.1 0.3 0.1'>
+                                <Shape USE='FOOT'> </Shape>
+                            </Transform>
+
+                        </Group>
+                    </Transform>
+
+                    <!-- 1st  BOX 2nd floor -->
+                    <Transform translation='-5 -1.1 -8' scale=' 1 1 1'>
+                        <Shape USE='Caixa'> </Shape>
+                    </Transform>
+
+                    <!-- 1st  DOOR-->
+                    <Transform DEF='porta1'>
+                        <Transform DEF='door1' translation='-5 -1.1 -6.95'>
+                            <Shape DEF='DOOR'>
+                                <Appearance>
+                                    <X3DAppearanceChildNode use='whitewood'>
+                                    </X3DAppearanceChildNode>
+                                    <TextureTransform rotation="1.57">
+                                    </TextureTransform>
+                                </Appearance>
+                                <Box size=' 3.2 3.9  0.1 '></Box>
+                        </Transform>
+                    </Transform>
+
+                </Transform>
+
+                <!-- 2nd BOX-->
+                <Transform DEF='2BOX'>
+
+                    <!-- 2nd  BOX 2nd floor -->
+                    <Transform translation='-1.79 0.91 -8' scale=' 1 1 1'>
+                        <Shape USE='Caixa'> </Shape>
+                    </Transform>
+
+                    <!-- 2nd BOX TOP  DOOR-->
+                    <Transform DEF='porta2.5'>
+                        <Transform scale='1 0.5 1' translation='3.21 2.39 0'>
+                            <Transform USE='door1'></Transform>
+                        </Transform>
+                    </Transform>
+
+                    <!-- 2nd  BOX  -->
+                    <Transform translation='-1.79 -3 -8' scale=' 1 1 1'>
+
+                        <Transform scale='1.5 1 1'>
+                            <Shape DEF='PANEL'>
+                                <Appearance>
+                                    <X3DAppearanceChildNode use='whitewood'>
+                                    </X3DAppearanceChildNode>
+                                </Appearance>
+                                <Box size=' 2 0.1 2'></Box>
+
+                            </Shape>
+                        </Transform>
+                        <!-- top panel -->
+                        <Transform scale='1.5 1 1' translation='0 3.8 0 '>
+                            <Shape use='PANEL'></Shape>
+                        </Transform>
+                        <!-- back panel -->
+                        <Transform scale='1.5 1 1.9' translation='0 1.95 -1.05 ' rotation='1 0 0 1.5708'>
+                            <Shape use='PANEL'></Shape>
+                        </Transform>
+                        <!-- side panel-->
+                        <Transform scale='1.9 1 1.05' translation='-1.55 1.95 -0.05 ' rotation='0 0 1 1.5708'>
+                            <Shape use='PANEL'></Shape>
+                        </Transform>
+                        <!--right panel-->
+                        <Transform scale='1.9 1 1.05' translation='1.55 1.95 -0.05 ' rotation='0 0 1 1.5708'>
+                            <Shape use='PANEL'></Shape>
+                        </Transform>
+
+
+                    </Transform>
+
+                    <!-- 2th BOX DOOR-->
+                    <Transform DEF='porta2'>
+                        <Transform translation='3.21 0 0'>
+                            <Transform USE='door1'></Transform>
+                        </Transform>
+                    </Transform>
+
+                    <!-- 2nd BOX FEET-->
+                    <Transform translation='-1.79 -3 -8' scale=' 1 1 1'>
+                        <Shape USE='FEET'> </Shape>
+                    </Transform>
+
+                </Transform>
+
+                <!-- 3rd BOX-->
+                <Transform DEF='3BOX'>
+
+                    <!-- 3rd  BOX  -->
+                    <Transform translation='1.42 -3 -8' scale=' 1 1 1'>
+                        <Group DEF='Caixa3'>
+                            <Transform scale='1.5 1 1'>
+                                <Shape DEF='PANEL'>
+                                    <Appearance>
+                                        <X3DAppearanceChildNode use='whitewood'>
+                                        </X3DAppearanceChildNode>
+                                        <TextureTransform scale='2 0.9 '>
+                                        </TextureTransform>
+                                    </Appearance>
+                                    <Box size=' 2 0.1 2'></Box>
+
+                                </Shape>
+                            </Transform>
+                            <!-- top panel -->
+                            <Transform scale='1.5 1 1' translation='0 7.9 0 '>
+                                <Shape use='PANEL'></Shape>
+                            </Transform>
+                            <!-- back panel -->
+                            <Transform scale='1.5 1 4' translation='0 3.95 -1.05 ' rotation='1 0 0 1.5708'>
+                                <Shape use='PANEL'></Shape>
+                            </Transform>
+                            <!-- side panel-->
+                            <Transform scale='4 1 1.05' translation='-1.55 3.95 -0.05 ' rotation='0 0 1 1.5708'>
+                                <Shape use='PANEL'></Shape>
+                            </Transform>
+                            <!--right panel-->
+                            <Transform scale='4 1 1.05' translation='1.55 3.95 -0.05 ' rotation='0 0 1 1.5708'>
+                                <Shape use='PANEL'></Shape>
+                            </Transform>
+                            <!-- cylinder inside the big boxes-->
+                            <Transform translation='0 7.5 -0.5' scale=' 0.1 1.5 0.1' rotation='1 0 1000 1.5708'>
+                                <Shape id=' cilindro1'>
+                                    <Appearance>
+                                        <X3DAppearanceChildNode use='whitewood'>
+                                        </X3DAppearanceChildNode>
+                                    </Appearance>
+                                    <Cylinder></Cylinder>
+                                </Shape>
+                            </Transform>
+
+
+                        </Group>
+                    </Transform>
+
+                    <!-- 3rd BOX DOOR-->
+                    <Transform DEF='porta3'>
+                        <Transform DEF='door3'>
+                            <Transform translation='6.42 3.2 0' scale='1 2.05 1'>
+                                <Transform USE='door1'></Transform>
+                            </Transform>
+                        </Transform>
+                    </Transform>
+
+                    <!-- 3rd BOX FEET-->
+                    <Transform translation='1.5 -3 -8' scale=' 1 1 1'>
+                        <Shape USE='FEET'> </Shape>
+                    </Transform>
+                </Transform>
+
+                <!-- 4th BOX -->
+                <Transform DEF='4BOX'>
+                    <!-- 4th  BOX  -->
+                    <Transform translation='4.63 -3 -8'>
+                        <Shape USE='Caixa3'> </Shape>
+                    </Transform>
+
+                    <!-- 4th BOX DOOR  -->
+                    <Transform DEF='porta4'>
+                        <Transform translation='3.21 0 0'>
+                            <Transform USE='door3'></Transform>
+                        </Transform>
+                    </Transform>
+
+                    <!-- 4th  BOX 2nd floor -->
+                    <Transform translation='4.63 5.01 -8' scale=' 1 1 1'>
+                        <Shape USE='Caixa'> </Shape>
+                    </Transform>
+
+                    <!-- 4th BOX FEET-->
+                    <Transform translation='4.5 -3 -8' scale=' 1 1 1'>
+                        <Shape USE='FEET'> </Shape>
+                    </Transform>
+
+                    <!-- 4th BOX TOP  DOOR-->
+                    <Transform DEF="porta4.5">
+                        <Transform translation='6.42 4.09 0'>
+                            <Transform USE='porta2.5'></Transform>
+                        </Transform>
+                    </Transform>
+                </Transform>
+
+
+                <!-- ANIMATION-->
+                <timeSensor DEF="time" cycleInterval="5" loop="true" startTime='10'> </timeSensor>
+                <PositionInterpolator DEF="moveD" key="
+                        0.0
+                        0.25
+                        0.5
+                        0.75
+                        1.0" keyValue="
+                        0 0 0
+                        2 0 0
+                        3 0 0
+                        2 0 0
+                        0 0 0">
+                </PositionInterpolator>
+
+
+                <PositionInterpolator DEF="moveU" key="
+                                        0.0
+                                        0.25
+                                        0.5
+                                        0.75
+                                        1.0" keyValue="
+                                        0 0 0
+                                        0 1 0
+                                        0 2 0
+                                        0 1 0
+                                        0 0 0">
+                </PositionInterpolator>
+
+                <PositionInterpolator DEF="moveU2" key="
+                                                            0.0
+                                                            0.25
+                                                            0.5
+                                                            0.75
+                                                            1.0" keyValue="
+                                                            0 0 0
+                                                            0 0 0
+                                                            0 0 0
+                                                            0 0 0
+                                                            0 0 0">
+                </PositionInterpolator>
+
+                <PositionInterpolator DEF="moveU3" key="
+                                                    0.0
+                                                    0.25
+                                                    0.5
+                                                    0.75
+                                                    1.0" keyValue="
+                                                    0 0 0
+                                                    0 2 0
+                                                    0 3.7 0
+                                                    0 2 0
+                                                    0 0 0">
+                </PositionInterpolator>
+
+                <PositionInterpolator DEF="moveU4" key="
+                                                                    0.0
+                                                                    0.25
+                                                                    0.5
+                                                                    0.75
+                                                                    1.0" keyValue="
+                                                                    0 0 0
+                                                                    0 4 0
+                                                                    0 8 0
+                                                                    0 4 0
+                                                                    0 0 0">
+                </PositionInterpolator>
+                <Route fromNode="time" fromField="fraction_changed" toNode="moveU2" toField="set_fraction"> </Route>
+                <Route fromNode="moveU2" fromField="value_changed" toNode="porta4.5" toField="translation"> </Route>
+
+                <Route fromNode="time" fromField="fraction_changed" toNode="moveU4" toField="set_fraction"> </Route>
+                <Route fromNode="moveU4" fromField="value_changed" toNode="porta3" toField="translation"> </Route>
+
+                <Route fromNode="time" fromField="fraction_changed" toNode="moveU" toField="set_fraction"> </Route>
+                <Route fromNode="moveU" fromField="value_changed" toNode="porta2.5" toField="translation"> </Route>
+
+                <Route fromNode="time" fromField="fraction_changed" toNode="moveD" toField="set_fraction"> </Route>
+                <Route fromNode="moveD" fromField="value_changed" toNode="porta4" toField="translation"> </Route>
+
+
+
+                <Route fromNode="time" fromField="fraction_changed" toNode="moveU3" toField="set_fraction"> </Route>
+                <Route fromNode="moveU3" fromField="value_changed" toNode="porta1" toField="translation"> </Route>
+
+
+
+                <!--  Deslocação -->
+                <TimeSensor DEF="Clock" cycleInterval="15" loop="true"> </TimeSensor>
+
+                <PositionInterpolator DEF="Position4" key="
+                        0.0
+                        0.2
+                        0.75
+                        1.0" keyValue="
+                        3 0 0
+                        2 0 0
+                        0 0 0
+                        0 0 0">
+                </PositionInterpolator>
+
+
+
+                <PositionInterpolator DEF="Position3" key="
+                                        0.0
+                                        0.75
+                                        1.0" keyValue="
+                                        0 0 -10
+                                        0 0 0
+                                        0 0 0">
+                </PositionInterpolator>
+
+                <PositionInterpolator DEF="Position1" key="
+                                        0.0
+                                        0.75
+                                        1.0" keyValue="
+                                        -5 0 0
+                                        0 0 0
+                                        0 0 0">
+                </PositionInterpolator>
+
+
+                <ROUTE fromNode="Clock" fromField="fraction_changed" toNode="Position1" toField="set_fraction">
+                </ROUTE>
+
+                <ROUTE fromNode="Clock" fromField="fraction_changed" toNode="Position3" toField="set_fraction">
+                </ROUTE>
+
+                <ROUTE fromNode="Clock" fromField="fraction_changed" toNode="Position4" toField="set_fraction">
+                </ROUTE>
+                <ROUTE fromNode="Position1" fromField="value_changed" toNode="1BOX" toField="translation">
+                </ROUTE>
+
+                <ROUTE fromNode="Position3" fromField="value_changed" toNode="3BOX" toField="translation">
+                </ROUTE>
+
+
+
+                <ROUTE fromNode="Position4" fromField="value_changed" toNode="4BOX" toField="translation">
+                </ROUTE>
+
+                <ROUTE fromNode="Clock" fromField="fraction_changed" toNode="Oscilation" toField="set_fraction">
+                </ROUTE>
+
+
+
+
+        </Scene>
+
+
+
+
+
+    </X3D>
+
+
+</body>
+
+</html>

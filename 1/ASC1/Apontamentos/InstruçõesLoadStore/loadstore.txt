@@ -1,0 +1,15 @@
+Instruções de load e store
+
+
+
+Em MIPS, os loads e stores usam endereços base+offset. O endereço base é obtido do registo indicado entre parentesis. 
+O deslocamento (offset) é um número que é somado ao endereço base para obter o endereço efectivo do load/store.
+
+Existem algumas restrições:
+
+O offset é um número de 16 bits com sinal.
+O endereço efectivo (base+offset) tem de ser um múltiplo de 4 no caso das instruções lw e sw.
+O endereço efectivo tem de ser um endereço válido do espaço de endereçamento.
+
+
+

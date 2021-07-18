@@ -1,0 +1,2723 @@
+[
+	{
+		"presencas": [
+			{
+				"justificada": false,
+				"falta": false,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Hallam Burnett",
+					"id": "001"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": false,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Lois Franks",
+					"id": "002"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": false,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Miyah Kane",
+					"id": "003"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": false,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Samanta Chaney",
+					"id": "004"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": false,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Prisha Ball",
+					"id": "005"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Poppy Francis",
+					"id": "070"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Rea House",
+					"id": "071"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Kareena Spears",
+					"id": "072"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Malaikah Oconnor",
+					"id": "073"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Musab Paine",
+					"id": "074"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Tanvir Page",
+					"id": "075"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Joey Strong",
+					"id": "076"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Connie Mccormack",
+					"id": "077"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Danniella Barton",
+					"id": "078"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Sannah Whitfield",
+					"id": "079"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Yaseen Kramer",
+					"id": "080"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Oliver Portillo",
+					"id": "081"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Korban Rossi",
+					"id": "082"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Hussein Rhodes",
+					"id": "083"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Veronica Singleton",
+					"id": "084"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Zachery Grainger",
+					"id": "085"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Gurdeep Tyson",
+					"id": "086"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Zachariah Bowes",
+					"id": "087"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Connagh Peralta",
+					"id": "088"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Carlos Contreras",
+					"id": "089"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Filip Cowan",
+					"id": "006"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Jarrad Fountain",
+					"id": "007"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Janice Mccray",
+					"id": "008"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Sebastien Moody",
+					"id": "009"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Amelia-Mae Pittman",
+					"id": "090"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Tamar Roberson",
+					"id": "091"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Kaitlyn Greaves",
+					"id": "092"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Peyton Riley",
+					"id": "093"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Ronald Cruz",
+					"id": "094"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Sahil Donald",
+					"id": "095"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Austin Buckner",
+					"id": "096"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Sarah-Louise Eaton",
+					"id": "097"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Mia Mair",
+					"id": "010"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Farrah Pham",
+					"id": "098"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Bentley Heaton",
+					"id": "011"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Efan Ibarra",
+					"id": "099"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Ravinder Penn",
+					"id": "012"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Prince Rich",
+					"id": "013"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Aleeza Huynh",
+					"id": "014"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Wesley Michael",
+					"id": "015"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Fahima Carter",
+					"id": "016"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Laura Walls",
+					"id": "017"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Ophelia Baldwin",
+					"id": "018"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Arnold Yu",
+					"id": "019"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Bobby Whitaker",
+					"id": "020"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Jorge Harper",
+					"id": "021"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Mackenzie Emery",
+					"id": "022"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Mohammod Dawe",
+					"id": "023"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Nelly Waters",
+					"id": "024"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Ricky Powers",
+					"id": "025"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Denzel Reeve",
+					"id": "026"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Bogdan Rosales",
+					"id": "027"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Rehan Fisher",
+					"id": "028"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Cordelia Swift",
+					"id": "029"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Johan Mcpherson",
+					"id": "030"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Everly Bailey",
+					"id": "031"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Sabina English",
+					"id": "032"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Brielle Whelan",
+					"id": "033"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Gregor Santiago",
+					"id": "034"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Dione Bowden",
+					"id": "035"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Fiza Hewitt",
+					"id": "036"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Shyam Person",
+					"id": "037"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Mahima Roy",
+					"id": "038"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Ralph Davidson",
+					"id": "039"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Shanaya Battle",
+					"id": "040"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Hasnain Patel",
+					"id": "041"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Jonah Orr",
+					"id": "042"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Dustin Lees",
+					"id": "043"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Afsana Mora",
+					"id": "044"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Brooklyn Haworth",
+					"id": "045"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Kane Horn",
+					"id": "046"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Esme Wiggins",
+					"id": "047"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Leila Barnett",
+					"id": "048"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Rahul Currie",
+					"id": "049"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Wilfred Trevino",
+					"id": "050"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Harvie Sharpe",
+					"id": "051"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Alex Munro",
+					"id": "052"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Aleyna Mcnally",
+					"id": "053"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Frances Sheridan",
+					"id": "054"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Alysha Dunlap",
+					"id": "055"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Lilian Frye",
+					"id": "056"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Sol Wang",
+					"id": "057"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Blythe Frey",
+					"id": "058"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Lukas Barr",
+					"id": "059"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Rufus Odom",
+					"id": "060"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Katharine Schroeder",
+					"id": "061"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Maxime Lucero",
+					"id": "062"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Aniela Snow",
+					"id": "063"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Affan Cornish",
+					"id": "064"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Cole Winters",
+					"id": "065"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Sumayya Rollins",
+					"id": "066"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Abbey Cherry",
+					"id": "067"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "docente",
+					"nome": "Leonie Leonard",
+					"id": "100"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Carrie-Ann O'Ryan",
+					"id": "068"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Brandon-Lee Couch",
+					"id": "069"
+				}
+			}
+		],
+		"data": "2020-06-01",
+		"hora": "10:00",
+		"disciplina": "Estudo do meio"
+	},
+	{
+		"presencas": [
+			{
+				"justificada": false,
+				"falta": false,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Poppy Francis",
+					"id": "070"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": false,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Hallam Burnett",
+					"id": "001"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Rea House",
+					"id": "071"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Kareena Spears",
+					"id": "072"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Malaikah Oconnor",
+					"id": "073"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Musab Paine",
+					"id": "074"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Tanvir Page",
+					"id": "075"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Joey Strong",
+					"id": "076"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Connie Mccormack",
+					"id": "077"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Danniella Barton",
+					"id": "078"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Sannah Whitfield",
+					"id": "079"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Yaseen Kramer",
+					"id": "080"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Oliver Portillo",
+					"id": "081"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Korban Rossi",
+					"id": "082"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Hussein Rhodes",
+					"id": "083"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Veronica Singleton",
+					"id": "084"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Zachery Grainger",
+					"id": "085"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Gurdeep Tyson",
+					"id": "086"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Zachariah Bowes",
+					"id": "087"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Connagh Peralta",
+					"id": "088"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Carlos Contreras",
+					"id": "089"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Lois Franks",
+					"id": "002"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Miyah Kane",
+					"id": "003"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Samanta Chaney",
+					"id": "004"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Prisha Ball",
+					"id": "005"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Filip Cowan",
+					"id": "006"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Jarrad Fountain",
+					"id": "007"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Janice Mccray",
+					"id": "008"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Sebastien Moody",
+					"id": "009"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Amelia-Mae Pittman",
+					"id": "090"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Tamar Roberson",
+					"id": "091"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Kaitlyn Greaves",
+					"id": "092"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Peyton Riley",
+					"id": "093"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Ronald Cruz",
+					"id": "094"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Sahil Donald",
+					"id": "095"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Austin Buckner",
+					"id": "096"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Sarah-Louise Eaton",
+					"id": "097"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Mia Mair",
+					"id": "010"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Farrah Pham",
+					"id": "098"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Bentley Heaton",
+					"id": "011"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Efan Ibarra",
+					"id": "099"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Ravinder Penn",
+					"id": "012"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Prince Rich",
+					"id": "013"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Aleeza Huynh",
+					"id": "014"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Wesley Michael",
+					"id": "015"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Fahima Carter",
+					"id": "016"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Laura Walls",
+					"id": "017"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Ophelia Baldwin",
+					"id": "018"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Arnold Yu",
+					"id": "019"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Bobby Whitaker",
+					"id": "020"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Jorge Harper",
+					"id": "021"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Mackenzie Emery",
+					"id": "022"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Mohammod Dawe",
+					"id": "023"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Nelly Waters",
+					"id": "024"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Ricky Powers",
+					"id": "025"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Denzel Reeve",
+					"id": "026"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Bogdan Rosales",
+					"id": "027"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Rehan Fisher",
+					"id": "028"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Cordelia Swift",
+					"id": "029"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Johan Mcpherson",
+					"id": "030"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Everly Bailey",
+					"id": "031"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Sabina English",
+					"id": "032"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Brielle Whelan",
+					"id": "033"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Gregor Santiago",
+					"id": "034"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Dione Bowden",
+					"id": "035"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Fiza Hewitt",
+					"id": "036"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Shyam Person",
+					"id": "037"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Mahima Roy",
+					"id": "038"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Ralph Davidson",
+					"id": "039"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Shanaya Battle",
+					"id": "040"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Hasnain Patel",
+					"id": "041"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Jonah Orr",
+					"id": "042"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Dustin Lees",
+					"id": "043"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Afsana Mora",
+					"id": "044"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Brooklyn Haworth",
+					"id": "045"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Kane Horn",
+					"id": "046"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Esme Wiggins",
+					"id": "047"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Leila Barnett",
+					"id": "048"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Rahul Currie",
+					"id": "049"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Wilfred Trevino",
+					"id": "050"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Harvie Sharpe",
+					"id": "051"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Alex Munro",
+					"id": "052"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Aleyna Mcnally",
+					"id": "053"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Frances Sheridan",
+					"id": "054"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Alysha Dunlap",
+					"id": "055"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Lilian Frye",
+					"id": "056"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Sol Wang",
+					"id": "057"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Blythe Frey",
+					"id": "058"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Lukas Barr",
+					"id": "059"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Rufus Odom",
+					"id": "060"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Katharine Schroeder",
+					"id": "061"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Maxime Lucero",
+					"id": "062"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Aniela Snow",
+					"id": "063"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Affan Cornish",
+					"id": "064"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Cole Winters",
+					"id": "065"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Sumayya Rollins",
+					"id": "066"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Abbey Cherry",
+					"id": "067"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "docente",
+					"nome": "Leonie Leonard",
+					"id": "100"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Carrie-Ann O'Ryan",
+					"id": "068"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Brandon-Lee Couch",
+					"id": "069"
+				}
+			}
+		],
+		"data": "2020-07-27",
+		"hora": "10:00",
+		"disciplina": "Análise Matemática I"
+	},
+	{
+		"presencas": [
+			{
+				"justificada": false,
+				"falta": false,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Efan Ibarra",
+					"id": "099"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": false,
+				"utilizador": {
+					"tipo": "docente",
+					"nome": "Leonie Leonard",
+					"id": "100"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Poppy Francis",
+					"id": "070"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Rea House",
+					"id": "071"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Kareena Spears",
+					"id": "072"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Malaikah Oconnor",
+					"id": "073"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Musab Paine",
+					"id": "074"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Tanvir Page",
+					"id": "075"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Joey Strong",
+					"id": "076"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Connie Mccormack",
+					"id": "077"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Danniella Barton",
+					"id": "078"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Sannah Whitfield",
+					"id": "079"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Yaseen Kramer",
+					"id": "080"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Oliver Portillo",
+					"id": "081"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Korban Rossi",
+					"id": "082"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Hussein Rhodes",
+					"id": "083"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Veronica Singleton",
+					"id": "084"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Zachery Grainger",
+					"id": "085"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Gurdeep Tyson",
+					"id": "086"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Zachariah Bowes",
+					"id": "087"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Connagh Peralta",
+					"id": "088"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Hallam Burnett",
+					"id": "001"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Carlos Contreras",
+					"id": "089"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Lois Franks",
+					"id": "002"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Miyah Kane",
+					"id": "003"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Samanta Chaney",
+					"id": "004"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Prisha Ball",
+					"id": "005"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Filip Cowan",
+					"id": "006"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Jarrad Fountain",
+					"id": "007"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Janice Mccray",
+					"id": "008"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Sebastien Moody",
+					"id": "009"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Amelia-Mae Pittman",
+					"id": "090"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Tamar Roberson",
+					"id": "091"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Kaitlyn Greaves",
+					"id": "092"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Peyton Riley",
+					"id": "093"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Ronald Cruz",
+					"id": "094"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Sahil Donald",
+					"id": "095"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Austin Buckner",
+					"id": "096"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Sarah-Louise Eaton",
+					"id": "097"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Mia Mair",
+					"id": "010"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Farrah Pham",
+					"id": "098"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Bentley Heaton",
+					"id": "011"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Ravinder Penn",
+					"id": "012"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Prince Rich",
+					"id": "013"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Aleeza Huynh",
+					"id": "014"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Wesley Michael",
+					"id": "015"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Fahima Carter",
+					"id": "016"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Laura Walls",
+					"id": "017"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Ophelia Baldwin",
+					"id": "018"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Arnold Yu",
+					"id": "019"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Bobby Whitaker",
+					"id": "020"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Jorge Harper",
+					"id": "021"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Mackenzie Emery",
+					"id": "022"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Mohammod Dawe",
+					"id": "023"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Nelly Waters",
+					"id": "024"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Ricky Powers",
+					"id": "025"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Denzel Reeve",
+					"id": "026"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Bogdan Rosales",
+					"id": "027"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Rehan Fisher",
+					"id": "028"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Cordelia Swift",
+					"id": "029"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Johan Mcpherson",
+					"id": "030"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Everly Bailey",
+					"id": "031"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Sabina English",
+					"id": "032"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Brielle Whelan",
+					"id": "033"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Gregor Santiago",
+					"id": "034"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Dione Bowden",
+					"id": "035"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Fiza Hewitt",
+					"id": "036"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Shyam Person",
+					"id": "037"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Mahima Roy",
+					"id": "038"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Ralph Davidson",
+					"id": "039"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Shanaya Battle",
+					"id": "040"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Hasnain Patel",
+					"id": "041"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Jonah Orr",
+					"id": "042"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Dustin Lees",
+					"id": "043"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Afsana Mora",
+					"id": "044"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Brooklyn Haworth",
+					"id": "045"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Kane Horn",
+					"id": "046"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Esme Wiggins",
+					"id": "047"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Leila Barnett",
+					"id": "048"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Rahul Currie",
+					"id": "049"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Wilfred Trevino",
+					"id": "050"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Harvie Sharpe",
+					"id": "051"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Alex Munro",
+					"id": "052"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Aleyna Mcnally",
+					"id": "053"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Frances Sheridan",
+					"id": "054"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Alysha Dunlap",
+					"id": "055"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Lilian Frye",
+					"id": "056"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Sol Wang",
+					"id": "057"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Blythe Frey",
+					"id": "058"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Lukas Barr",
+					"id": "059"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Rufus Odom",
+					"id": "060"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Katharine Schroeder",
+					"id": "061"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Maxime Lucero",
+					"id": "062"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Aniela Snow",
+					"id": "063"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Affan Cornish",
+					"id": "064"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Cole Winters",
+					"id": "065"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Sumayya Rollins",
+					"id": "066"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Abbey Cherry",
+					"id": "067"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Carrie-Ann O'Ryan",
+					"id": "068"
+				}
+			},
+			{
+				"justificada": false,
+				"falta": true,
+				"utilizador": {
+					"tipo": "aluno",
+					"nome": "Brandon-Lee Couch",
+					"id": "069"
+				}
+			}
+		],
+		"data": "2020-07-20",
+		"hora": "10:00",
+		"disciplina": "MDS"
+	}
+]

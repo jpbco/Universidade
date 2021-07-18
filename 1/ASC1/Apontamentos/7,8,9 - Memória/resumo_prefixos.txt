@@ -1,0 +1,30 @@
+Prefixos Binários
+
+(1024 = 2^10)
+
+1TiB =1024^4 Bytes ou 2^40 Bytes
+
+1TiB = 1024^3 KiB
+
+1PiB=1024^5Bytes
+
+1PiB=2^10TiB
+
+1MiB = 2^20 bytes
+
+1MiB = 1024KiB
+
+1GiB=1024^3 Bytes
+
+1KiB=1024 Bytes
+
+1EiB = 
+
+A ordem correcta é: Ki, Mi, Gi, Ti, Pi, Ei.
+
+Cada novo prefixo é 1024 vezes o anterior. <- importante
+
+
+
+Por regra, os prefixos binários devem usar-se exclusivamente em referência à capacidade de memória. 
+Nos restantes casos devem usar-se os prefixos decimais

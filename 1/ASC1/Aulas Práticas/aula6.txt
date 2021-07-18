@@ -1,0 +1,37 @@
+#2
+Usando as instruções de branch – beq ou bne – será possível saltar para qualquer outra instrução de
+um programa? Qual a gama de instruções acessíveis por um branch?
+
+R: A gama de endereços atingíveis por um branch é de 256 KiB em relação ao programa counter.
+
+#3
+Considerando agora as instruções de salto – j ou jal – responda novamente à pergunta anterior
+
+R:  Uma operação jump pode saltar para todos os endereços que tenham os 4 bits mais significativos iguais ao do program counter no momento em que o jump é realizado
+
+#4 
+
+O registo $gp contém o endereço 0x10008000 e mantém-se constante ao longo da execução de um
+programa. Este registo é usado para aceder a uma certa região de memória com as instruções de
+load e store.
+Qual a gama de endereços acessíveis com instruções do tipo lw $t0, offset($gp), onde $gp é fixo e offset é livre? Que região de memória é essa? (text/global/dynamic/stack)?
+
+R: Permite acesso a 64 KiB desde 0x10000000 a 0x1000ffff. Esta região de memória é a static & global data.
+
+#5 
+
+Sabe-se que uma função está carregada em memória no endereço 0x004010a0 com ordenação de bytes
+little endian. Fazendo um dump da memória a partir do endereço da função, obteve-se a sequência
+de bytes abaixo. O que faz esta função?
+06 00 a0 10 25 10 00 00 00 00 88 8c 04 00 84 20 ff ff a5 20 fc ff a0 14 20 10 48 00
+08 00 e0 03 00 00 00 00
+
+R:
+06 00 a0 10 |25 10 00 00 |00 00 88 8c |04 00 84 20 |ff ff a5 20 |fc ff a0 14 
+| 20 10 48 00 | 08 00 e0 03 | 00 00 00 00
+
+0000 0000 0000 0000 0000 0000 0000 0000 # nop
+001100 00000 01110 0000000010000000 # andi $t6 ,$zero, 128
+000000 00100 00100 00000 00100 000010 # srl
+
+

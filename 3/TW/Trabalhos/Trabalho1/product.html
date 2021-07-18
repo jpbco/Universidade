@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Informação de produtos</title>
+  </head>
+
+  <body>
+    <header class="secção" id="cabeçalho">
+      <div id="img"><a href="index.html"> <img src="images/store_logo.png" alt="Logotipo" /></a></div>
+      <div id="search_bar"><input type="search" name="search_bar" /></div>
+      <div id="button_wrapper">
+        <button>Search</button>
+        <a href="advanced_search.html">Advanced Search</a>
+      </div>
+    </header>
+    <section>
+      <nav class="secção" id="categorias">
+        <ul>
+          <li><a id="Art" href="#">Art</a></li>
+          <li><a id="Clothing" href="#">Clothing</a></li>
+          <li><a id="Eletronics" href="#">Eletronics</a></li>
+          <li><a id="Food" href="#">Food</a></li>
+          <li><a id="Pet_Supplies" href="#">Pet Supplies</a></li>
+          <li><a id="Video_Games" href="#">Video Games</a></li>
+        </ul>
+      </nav>
+      <div class="seccção" id="detalhes">
+        <figure class="product_figure">
+          <a href="images/doktor_hu.png">
+            <img src="images/doktor_hu.png" alt="Meat" />
+          </a>
+          <figcaption>
+            Hand-drawn image of Doktor Hu by a small child. Doktor Hu is a fictional character that explores the world in a slow-travelling go-kart.
+          </figcaption>
+        </figure>
+        <table id="tabela_inf" >
+          <tr>
+            <td><p class="table_description_l">Price:</p></td>
+            <td><p class="table_description_r">4€</p></td>
+          </tr>
+          <tr>
+            <td><p class="table_description_l">Delivery fee:</p></td>
+            <td><p class="table_description_r">2€</p></td>
+          </tr>
+          <tr>
+            <td><p class="table_description_l">Delivery date:</p></td>
+            <td><input id="delivery_date" class="table_description_r" type="date" value="2020-12-23" readonly/></td>
+          </tr>
+          <tr>
+            <td><p class="table_description_l">Payment:</p></td>
+            <td><p class="table_description_r">MBWAY, Credit Card, Paypal</p></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><p class="table_description_l">Amount:</p></td>
+            <td><input class="table_description_r" type="number" /><button>Buy</button></td>
+          </tr>
+        </table>
+
+      </div>
+    </section>
+    <footer class="secção" id="about">
+      <a href="#">About this page</a>
+    </footer>
+  </body>
+</html>

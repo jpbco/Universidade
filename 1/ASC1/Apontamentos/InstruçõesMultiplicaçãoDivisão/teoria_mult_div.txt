@@ -1,0 +1,42 @@
+A instrução div realiza a divisão inteira entre dois registos 
+os e coloca o resto e o quocience no par de registos hi e lo:
+
+
+   32 bits     32 bits
++-----------+-----------+
+|     hi    |     lo    |
++-----------+-----------+
+    resto     quociente
+O resto e quociente podem depois ser copiados para os registos genéricos com as instruções mfhi (move from high) e mflo (move from low). A resposta correcta é :
+
+div $t0, $t1
+mflo $t2
+
+
+---------------------------------------------
+
+Em geral, ao multiplicar dois registos de 32 bits, 
+o resultado pode necessitar de 64 bits. Por esse motivo, 
+a arquitectura MIPS dispõe de dois registos especializados 
+de 32 bits, que no caso das multiplicações funcionam como 
+um único registo de 64 bits para conter o resultado da 
+operação. O registo hi contém os 32 bits mais significativos 
+e o lo os 32 bits menos significativos.
+
+   32 bits     32 bits
++-----------+-----------+
+|     hi    |     lo    |
++-----------+-----------+
+         64 bits
+A instrução mult multiplica dois registos genéricos e 
+coloca o resultado no par de registos hi e lo.
+
+As instruções mfhi (move from high) e mflo (move from low) 
+permitem copiar os resultados para os registos genéricos.
+
+Se soubermos de antemão que os números são pequenos, e que 
+o resultado pode ser representado em 32 bits, então podemos 
+ignorar o registo hi. A resposta correcta é:
+
+mult $t0, $t1
+mflo $t2

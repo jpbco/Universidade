@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+  xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/stylesheet.css" />
+  <title>Informação de produtos</title>
+</head>
+
+<body>
+  <form th:action="@{/search}">
+    <header class="secção" id="cabeçalho">
+      <div id="img">
+        <a th:href="@{'/'}">
+          <img src="/images/store_logo.png" alt="Logotipo" />
+        </a>
+      </div>
+      <div id="search_bar"><input type="search" name="search_bar" /></div>
+      <div id="button_wrapper">
+        <button>Search</button>
+        <a th:href="@{'/advanced'}">Advanced Search</a>
+      </div>
+    </header>
+  </form>
+  <section>
+    <nav class="secção" id="categorias">
+      <ul>
+        <li><a id="Art" href="#">Art</a></li>
+        <li><a id="Clothing" href="#">Clothing</a></li>
+        <li><a id="Eletronics" href="#">Eletronics</a></li>
+        <li><a id="Food" href="#">Food</a></li>
+        <li><a id="Pet_Supplies" href="#">Pet Supplies</a></li>
+        <li><a id="Video_Games" href="#">Video Games</a></li>
+      </ul>
+    </nav>
+    <div class="seccção" id="detalhes">
+      <figure class="product_figure">
+        <a href="images/" th:href="@{'/images/' + ${product.pictureUrl} + '.png'}">
+          <img th:src="@{'/images/' + ${product.pictureUrl} + '.png'}" />
+        </a>
+        <figcaption th:text="${product.description}"></figcaption>
+      </figure>
+      <table id="tabela_inf">
+        <tr>
+          <td>
+            <p class="table_description_l">Price:</p>
+          </td>
+          <td>
+            <p class="table_description_r" th:text="${product.price} + ' €'"></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p class="table_description_l">Delivery fee:</p>
+          </td>
+          <td>
+            <p class="table_description_r" th:text="${product.fee} + ' €'"></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p class="table_description_l">Delivery date:</p>
+          </td>
+          <td>
+            <p class="table_description_r" th:text="${product.delivery_date}"></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p class="table_description_l">Payment:</p>
+          </td>
+          <td>
+            <p class="table_description_r">MBWAY, Credit Card, Paypal</p>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="table_description_l">Stock:</p>
+          </td>
+          <td>
+            <p class="table_description_r" th:text="${product.stock}"></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p class="table_description_l">Amount:</p>
+          </td>
+          <td><input class="table_description_r" type="number" /></td>
+          <td>
+            <a th:href="@{'/new-order/'+ ${product.id}}">
+              <button>Buy</button>
+            </a>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </section>
+  <footer class="secção" id="about">
+    <table>
+        <tr>
+            <td>
+                <a href="#">About this page</a>
+            </td>
+            <td sec:authorize="hasRole('ROLE_ADMIN')">
+                <a th:href="@{/new}"><button>Create New Product</button></a>
+            </td>
+            <td sec:authorize="hasRole('ROLE_ADMIN')">
+                <a href="/list-orders"><button>List Orders</button></a>
+            </td>
+            <td sec:authorize="hasRole('ROLE_USER')">
+                <a href="/list-orders/user"><button>List Orders</button></a>
+            </td>
+
+            <td sec:authorize="isAnonymous()">
+                <a href="/add-client"><button>Register</button></a>
+            </td>
+
+            <td sec:authorize="isAnonymous()">
+                <a th:href="@{/login}">
+                    <button>Log In</button>
+                </a>
+            </td>
+            <td sec:authorize="isAuthenticated()">
+                <form th:action="@{/logout}" method="post">
+                    <input type="submit" value="Sign Out" />
+                </form>
+            </td>
+        </tr>
+    </table>
+</footer>
+</body>
+
+</html>

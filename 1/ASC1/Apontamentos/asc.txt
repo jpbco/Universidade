@@ -1,0 +1,450 @@
+Escreva um peda�o de c�digo que fa�a set do bit 29 do registo $t4, isto
+�, que coloque esse bit a 1 mantendo os restantes bits do registo
+inalterados.
+Por exemplo, se $t4 tiver inicialmente o valor 0x0000007f, dever� ficar
+com 0x2000007f. Caso o bit 29 seja inicialmente 1, o valor fica
+inalterado.
+O c�digo dever� ter no m�ximo 3 instru��es reais (� poss�vel com apenas
+2). Case necessite de usar um registo auxiliar, use o $t7.
+
+lui $t7, 0x2000
+or $t4, $t4, $t7
+
+Escreva um peda�o de c�digo que fa�a set do bit 28 do registo $t3, isto
+�, que coloque esse bit a 1 mantendo os restantes bits do registo
+inalterados.
+Por exemplo, se $t3 tiver inicialmente o valor 0x0000007f, dever� ficar
+com 0x1000007f. Caso o bit 28 seja inicialmente 1, o valor fica
+inalterado.
+O c�digo dever� ter no m�ximo 3 instru��es reais (� poss�vel com apenas
+2). Case necessite de usar um registo auxiliar, use o $s3.
+
+lui $s3, 0x1000
+or $t3, $t3, $s3
+
+-------------------------
+
+Escreva um peda�o de c�digo que coloque o bit 24 do registo $t2 no bit 0
+(menos significativo) do registo $t1. Os restantes bits de $t1 dever�o
+ser zeros.
+Por exemplo, se $t2 tiver o valor 0xf1000000, ent�o o registo $t1 dever�
+ficar a 1.
+---
+sll $s2, $t2, (31-24)
+srl $s2, $s2, 31
+or $t1, $zero, $s2
+
+Efectue a troca dos valores dos registos $t0 e $t1 usando apenas tr�s
+instru��es xor e sem usar mais nenhum registo al�m destes dois.
+--
+xor $t0, $t0, $t1
+xor $t1, $t0, $t1
+xor $t0, $t0, $t1
+--------------
+
+t2= 2*$t0 + 3*($t0 - $t1)
+sub $t1, $t0, $t1
+
+add $t3, $t1, $t1
+add $t3, $t3, $t1
+add $t0, $t0, $t0
+add $t2, $t3, $t0
+--------------
+Escreva um peda�o de c�digo que reordene os bytes do registo $t0 pela
+ordem inversa.
+Por exemplo, se $t0 tiver originalmente o valor 0x12345678, ap�s a
+execu��o do c�digo dever� ficar com 0x78563412. O resultado dever� ser
+guardado no mesmo registo $t0.
+O c�digo n�o dever� usar nenhuma instru��o de load ou store.
+
+sll $t1, $t0, 24
+srl $t2, $t0, 24
+or $t3, $t1, $t2
+sll $t1, $t0, 16
+srl $t1, $t1, 24
+sll $t1, $t1, 16
+sll $t2, $t0, 8
+srl $t2, $t2, 24
+sll $t2, $t2, 8
+or $t4, $t2, $t1
+or $t0, $t3, $t4
+
+-----
+ble $t0, $t1, L
+slt $at, $t1, $t0
+beq $at, $zero, L
+----
+bgt $t0, $t1, L
+slt $at, $t1, $t0
+bne $at, $zero, L
+----
+blt $t0, $t1, L
+slt $at, $t0, $t1
+bne $at, $zero, L
+--
+bge $t0, $t1, L
+slt $at, $t0, $t1
+beq $at, $zero, L
+
+----
+li $s0, 0x003b7462
+
+lui $at, 0x003b
+ori $s0, $at, 0x7462
+------
+Pseudo-instru��es:
+As pseudo-instru��es n�o fazem parte da arquitectura de conjunto de
+instru��es.
+Uma pseudo-instru��o n�o tem c�digo m�quina.
+As pseudo-instru��es s�o convertidas em instru��es reais pelo Assembler.
+-------
+bge $zero, $zero, L
+lui $t1, 0x12345678
+Desconhecido pois o registo $t1 n�o chega a ser inicializado.
+
+---
+
+Um certo programa cont�m quatro fun��es: trunks, gowan, bulma e piccolo.
+Algumas destas fun��es chamam as outras do seguinte modo:
+trunks chama bulma e piccolo.
+bulma n�o tem chamadas de fun��es.
+piccolo � uma fun��o recursiva.
+gowan chama trunks.
+
+gowan
+trunks
+piccolo
+
+------
+O que � necess�rio fazer para guardar a string "a ovelha" na pilha?
+Decrementar o endere�o em $sp de 12 bytes.
+s� pode ser multiplos de 4, nest caso 8+1 inesxixstente
+--
+Registos preservados por uma fun��o (ABI): estes necessitam s0-s7, gp, sp
+--
+int f(int x)
+{
+int a = 0; // local variable
+
+while (--x)
+a += x;
+return a;
+}
+REGISTOS CODE STACK
+----
+int a = 1; // global variable
+int f(int x)
+{
+return a + x;
+}
+DATA
+----
+const in a = 2;
+int f(int x)
+{
+const int b = -1;
+return a*x + b;
+}
+N�o HEAP
+
+Registos tempor�rios:
+S:
+O valor do registo t0 tem de ser guardado na pilha antes da instru��o
+jal, e recuperado da pilha a seguir ao nop.
+A fun��o func tem de guardar o valor original do registo s0 no in�cio da
+sua execu��o, antes de o poder modificar. Tem tamb�m de rep�r o valor
+original antes de terminar.
+O registo s0 pode ser usado para guardar valores tempor�rios ou vari�veis
+locais da fun��o.
+N:
+A fun��o func s� necessita de guardar o valor de s0 na pilha se a fun��o
+xpto usar o registo s0.
+O registo s0 pode ser usado para guardar uma vari�vel global do programa.
+Se a fun��o xpto modificar o valor de t0, ent�o � necess�rio preservar t0
+na pilha, caso contr�rio n�o � necess�rio guardar o seu valor na pilha.
+------
+
+swap_int:
+lw $t1, 0($a0)
+lw $t2, 0($a1)
+sw $t2, 0($a0)
+
+sw $t1, 0($a1)
+
+jal leap_year
+addi $a0, $a0, 1040
+j over
+nop
+leap_year:
+li $t0, 400
+div $a0, $t0
+mfhi $t1
+beq $t1, $zero, END
+addi $v0, $zero, 1
+li $t0, 4
+div $a0, $t0
+mfhi $t1
+seq $t1, $zero, $t1
+li $t0, 100
+div $a0, $t0
+mfhi $t2
+seq $t2, $zero, $t2
+blt $t2, $t1, END
+addi $v0, $zero, 1
+move $v0, $zero
+END:
+jr $ra
+nop
+over:
+nop
+
+?????????????!?!?!!?!?!?!!?
+?????????????!?!?!!?!?!?!!?
+
+converte_string:
+    subi $sp, $sp, 8
+    sw $s0, 0($sp)
+    sw $ra, 4($sp)
+    move $s0, $a0
+L1:
+    lb $a0, 0($s0)
+    jal converte_char
+    nop
+    sb $v0, 0($s0)
+    bne $v0, $zero, L1
+    addi $s0, $s0, 1
+    
+    lw $s0, 0($sp)
+    lw $ra, 4($sp)
+    addi $sp, $sp, 8
+    jr $ra
+    nop
+
+----------------
+leap_year:
+li $t0, 400
+div $a0, $t0
+mfhi $t1
+beq $t1, $zero, END
+addi $v0, $zero, 1
+li $t0, 4
+div $a0, $t0
+mfhi $t1
+seq $t1, $zero, $t1
+li $t0, 100
+div $a0, $t0
+mfhi $t2
+seq $t2, $zero, $t2
+blt $t2, $t1, END
+addi $v0, $zero, 1
+move $v0, $zero
+END:
+jr $ra
+nop
+over:
+nop
+????????????????????????????????????????????
+############### absdiff ###############
+absdiff:
+addi $sp,$sp,-4
+
+sw $ra,0($sp)
+sub $a0, $a0, $a1
+jal abs # calcula valor absoluto de a0
+nop
+sll $v0,$v0,1
+lw $ra,0($sp)
+addi $sp,$sp,4
+jr $ra
+nop
+############### soma ###############
+soma:
+addi $sp,$sp,-8
+sw $ra,0($sp)
+sw $t0,4($sp)
+move $v0, $zero
+beq $a1, $zero, L
+nop
+lw $t0, 0($a0)
+addi $a0, $a0, 4
+addi $a1, $a1, -1
+jal soma
+nop
+add $v0, $v0, $t0
+L:
+lw $ra,0($sp)
+addi $sp,$sp,4
+lw $t0,0($sp)
+addi $sp,$sp,4
+jr $ra
+nop
+############### zahl ###############
+zahl:
+ori $v0, $zero, 0
+addi $sp, $sp, -4
+sw $s0, 0($sp)
+L:
+lb $s0, 0($a0)
+addi $a0, $a0, 1
+bne $s0, $a1, SKIP
+nop
+addi $v0, $v0, 1
+SKIP:
+bne $s0, $zero, L
+nop
+lw $s0, 0($sp)
+addi $sp, $sp, 4
+jr $ra
+
+nop
+############### strlen ###############
+strlen:
+addi $v0,$zero,0
+L:
+lb $t0,0($a0)
+addi $a0,$a0,1
+beq $t0,$zero , End
+nop
+addi $v0,$v0,1
+beq $zero,$zero,L
+nop
+End:
+jr $ra
+nop
+############### Summe ###############
+Summe:
+sub $t1 ,$a1,$a0
+addi $t1,$t1,1
+add $t4,$zero,$a0
+add $t2,$zero,$zero
+A:
+beq $t1 ,$zero,L
+nop
+add $t4,$t4,$t2
+add $t2 ,$zero ,$a0
+addi $t2, $t2,1
+addi $a0,$a0 ,1
+beq $zero,$zero, A
+addi $t1,$t1,-1
+L:
+add $v0, $zero, $t4
+jr $ra
+nop
+############### Count ###############
+count_zeros:
+add $v0,$zero,$zero
+addi $t1,$zero,1
+addi $t5,$zero,32
+T:
+beq $t5,$zero,End
+nop
+and $t0,$t1,$a0
+srl $a0,$a0,1
+addi $t5,$t5,-1
+bne $t0,$t1,P
+nop
+beq $zero,$zero,T
+nop
+P:
+addi $v0,$v0,1
+beq $zero,$zero,T
+nop
+End:
+jr $ra
+nop
+############### max3 ###############
+max3:
+slt $t1,$a0,$a1
+beq $t1,$zero, L
+nop
+slt $t1, $a1,$a2
+beq $t1,$zero, P
+nop
+j T
+nop
+L:
+slt $t1,$a0,$a2
+beq $t1,$zero,V
+nop
+T:
+add $v0,$zero,$a2
+j End
+nop
+V:
+add $v0,$zero,$a0
+j End
+nop
+P:
+add $v0,$zero,$a1
+End:
+jr $ra
+nop
+############### sum3 ###############
+sum3:
+add $v0,$a0,$a1
+add $v0,$v0,$a2
+jr $ra
+nop
+############### abs ###############
+abs:
+slt $t1 ,$a0,$zero
+bne $t1,$zero,L
+nop
+add $v0,$zero,$a0
+j Fim
+nop
+L:
+sub $v0,$zero,$a0
+Fim:
+jr $ra
+nop
+
+############### registo7 ###############
+add $t1,$zero,$t0
+sll$t1,$t1,24
+srl $t1,$t1,31
+############### factorial ###############
+factorial:
+li $v0,1
+A:
+beq $a0,$zero,L
+nop
+mult $v0,$a0
+mflo $v0
+addi $a0,$a0,-1
+beq $zero,$zero,A
+nop
+L:
+jr $ra
+nop
+
+############### swap_int ###############
+swap_int:
+lw $t1,0($a0)
+lw $t0,0($a1)
+sw $t1,0($a1)
+sw $t0,0($a0)
+jr $ra
+nop
+_________________________
+count_ones:
+add $v0,$zero,$zero
+addi $t1,$zero,1
+addi $t5,$zero,32
+T:
+beq $t5,$zero,End
+nop
+and $t0,$t1,$a0
+srl $a0,$a0,1
+addi $t5,$t5,-1
+beq $t0,$t1,P
+nop
+beq $zero,$zero,T
+nop
+P:
+addi $v0,$v0,1
+beq $zero,$zero,T
+nop
+End:
+jr $ra
+nop

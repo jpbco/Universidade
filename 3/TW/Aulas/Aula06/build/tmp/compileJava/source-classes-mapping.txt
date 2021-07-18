@@ -1,0 +1,8 @@
+org/therestaurant/tweb/RemoveClient.java
+ org.therestaurant.tweb.RemoveClient
+org/therestaurant/tweb/AddToWaitingList.java
+ org.therestaurant.tweb.AddToWaitingList
+org/therestaurant/tweb/ManageList.java
+ org.therestaurant.tweb.ManageList
+org/therestaurant/tweb/TheRestaurant.java
+ org.therestaurant.tweb.TheRestaurant

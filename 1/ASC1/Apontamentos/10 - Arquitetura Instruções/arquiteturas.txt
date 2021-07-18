@@ -1,0 +1,49 @@
+ISA
+
+A arquitectura de conjunto de instruções (ISA), muitas vezes chamada apenas arquitectura, é uma especificação de tudo o que é necessário saber programar um computador dessa arquitectura.
+
+A arquitectura define:
+
+O conjunto de instruções e registos disponíveis;
+O comportamento detalhado de cada instrução;
+O código máquina das instruções;
+A arquitectura de memória;
+Como é realizado o acesso a dispositivos;
+
+Uma arquitectura pode ser implementada em hardware de muitos modos diferentes e com objectivos diferentes. Por exemplo, podem ser realizadas implementações com o objectivo de maximizar o desempenho de servidores e workstations, minimizar o consumo de energia em dispositivos móveis (telemóveis e tablets) ou minimizar o custo.
+
+ 1. A arquitectura especifica as instruções e o seu código máquina enquanto a implementação especifica como estas são construídas em hardware.
+
+2. Uma implementação diz respeito a uma forma particular de realizar em hardware uma arquitectura de conjunto de instruções.
+
+
+
+RISC
+
+Uma arquitectura RISC (Reduced Instruction Set Computer) é uma arquitectura caracterizada por ter um pequeno conjunto de instruções simples e genéricas.
+
+Uma das características comuns das arquitecturas RISC é serem arquitecturas load/store, em que os acessos à memória são feitos apenas com instruções específicas para esse efeito.
+
+O oposto de uma arquitectura RISC é uma arquitectura CISC (Complex Instruction Set Computer) em que as instruções combinam tipicamente várias operações (sobre registos e memória, por exemplo).
+
+1. Conter um conjunto de instruções que executam operações simples.
+2. Os registos serem genéricos e poderem ser usados para qualquer propósito.
+3. Os programas necessitarem tipicamente de mais instruções e portanto serem maiores
+CISC
+
+ 1.Os programas requererem tipicamente menos instruções e portanto serem mais curtos.
+
+ 2. Conter um conjunto vasto de instruções que executam operações complexas.
+
+ 3. Ter registos dedicados para funções específicas.
+
+word
+
+ 1. É um conjunto de bits que é tratado como uma unidade de dados pelas instruções do processador.
+
+ 2. É o tamanho dos dados com que as instruções operam numa certa arquitectura.
+
+Registo
+
+1. Os registos disponíveis e o seu tamanho depende da arquitectura de conjunto de instruções implementada no processador.
+

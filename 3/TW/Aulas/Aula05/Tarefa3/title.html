@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Million Dollar WebApp</title>
+</head>
+
+<body>
+    <div id="container">
+        <p id="paragraph">Welcome to the Billion Dollar Web Page!</p>
+        <button id="button" onclick="doStuff()">Click me</button>
+    </div>
+    <script>
+        // Your code goes here!
+        var originalTitle;
+        originalTitle = document.title;
+        var unread = 1;
+        var index = 0;
+        var colors = ["red", "blue", "green", "yellow"];
+
+        function showUnreadCount(unread) {
+            //  document.title = originalTitle + unread;
+            document.title = originalTitle + "(" + unread + " new messages)!";
+
+        }
+
+        function doStuff(){
+            
+            showUnreadCount(unread++);
+            document.getElementById('paragraph').innerHTML = "You have "+unread+" unread messages";
+            document.getElementById('paragraph').style.backgroundColor = colors[index];
+            index = (index + 1 )  % colors.length;
+        }
+
+ 
+    </script>
+</body>
+
+</html>

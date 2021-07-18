@@ -1,0 +1,29 @@
+h1 {
+    color: red;
+    border-bottom: red;
+    border-bottom: solid;
+    border-bottom-width: 1px;
+ }
+
+ h2 {
+    color: red;
+    margin-left: 100px;
+    
+ }
+
+ p {
+    font-size: small;
+    font-family: sans-serif;
+    margin-left: 100px;
+ }
+
+ img {
+    float: right;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 12px;
+    margin-right: 12px;
+
+ }
+
+ #segundo { color: grey;}

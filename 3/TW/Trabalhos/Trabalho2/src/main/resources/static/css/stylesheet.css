@@ -1,0 +1,305 @@
+a {
+  transition: background-color 0.4s;
+}
+
+header {
+  width: 100%;
+  background-color: #181818;
+  display: flex;
+  margin-bottom: 20px;
+}
+body {
+  font-family: sans-serif;
+  padding: 0px;
+  margin: 0px;
+  background-image: url(../images/source.gif);
+}
+
+#search_bar,
+img {
+  align-self: center;
+}
+
+#search_bar {
+  flex-grow: 1;
+  background-color: #c2cad0;
+}
+
+#search_bar input {
+  width: 100%;
+}
+
+#button_wrapper {
+  align-self: center;
+}
+
+#button_wrapper a {
+  color: rgba(238, 163, 25, 0.692);
+  margin-right: 5px;
+}
+
+#button_wrapper button {
+  background-color: rgb(219, 219, 219);
+}
+
+header img {
+  width: 250px;
+}
+
+/*Secção Produtos*/
+
+#produtos {
+  width: 100%;
+  padding: 0;
+  border-color: grey;
+  border-style: double;
+  background-color: rgb(238, 238, 238);
+}
+#produtos a {
+  color: rgb(51, 33, 0);
+}
+#produtos img {
+  width: 227px;
+  height: auto;
+}
+
+.product_quantity {
+  font-size: 2em;
+  margin: 0px;
+  padding: 0px;
+}
+
+#produtos table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.index_figure {
+  display: flex;
+  border-color: grey;
+  border-bottom-style: solid;
+  margin: 5px 0px 5px 0px;
+}
+
+#produtos ul,
+table {
+  padding: 0;
+  margin: 0;
+}
+figcaption {
+  align-self: center;
+  margin-left: 1em;
+}
+figcaption h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+figcaption p {
+  font-size: 1.5em;
+  margin: 5px 0px 5px 0px;
+}
+.product_price {
+  font-size: 1.5em;
+}
+
+@media screen and (min-width: 480px) {
+  #produtos img {
+    width: 124px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  #produtos img {
+    width: 180px;
+  }
+}
+
+@media screen and (min-width: 690px) {
+  #produtos img {
+    width: 227px;
+  }
+}
+
+/* Paginação */
+.pagination {
+  float: right;
+}
+.pagination a {
+  float: left;
+  padding: 4px 10px;
+}
+
+/* Style the active/current link */
+.pagination a.active {
+  background-color: rgb(240, 204, 151);
+}
+
+/* Add a grey background color on mouse-over */
+a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+/*
+ Secção “categorias”
+
+*/
+
+nav {
+  width: 205px;
+  height: auto;
+  background-color: #d4a327;
+  padding-right: 20px;
+}
+
+#Art {
+  font-weight: bold;
+  color: rgb(36, 20, 20);
+}
+ul {
+  list-style-type: none;
+}
+nav ul {
+  padding: 5px;
+}
+nav a {
+  color: rgb(133, 98, 98);
+  font-size: x-large;
+}
+
+nav ul li {
+  margin-bottom: 0.5em;
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    width: 100%;
+  }
+
+  nav li {
+    display: inline-block;
+  }
+
+  nav a {
+    margin: 0px 5px 0px 5px;
+  }
+}
+
+/*
+ Secção “about”
+
+*/
+
+#about {
+  text-align: left;
+  padding: 10px;
+  border-top-style: ridge;
+  border-color: grey;
+  border-width: 10px;
+  margin-top: 20px;
+}
+
+#about a {
+  color: #d4a327;
+}
+
+/* Comportamento da página */
+
+@media screen and (min-width: 750px) {
+  section {
+    display: flex;
+  }
+  body {
+    max-width: 1028px;
+    margin: auto;
+  }
+  #categorias {
+    width: 205px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #categorias {
+    width: 100%;
+  }
+}
+
+/* 
+product.html
+*/
+
+#detalhes img {
+  width: 300px;
+  height: auto;
+  float: left;
+}
+
+.product_figure {
+  display: flex;
+  margin: 5px;
+}
+
+.product_figure figcaption {
+  font-size: 22px;
+  color: #777;
+  font-style: italic;
+}
+
+#detalhes p {
+  padding-left: 5px;
+}
+@media screen and (max-width: 600px) {
+  #detalhes img {
+    width: 550px;
+  }
+
+  .product_figure {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .product_figure figcaption {
+    align-self: flex-end;
+    padding-right: 22px;
+    /*adjust this to control how far it should be from egde*/
+  }
+}
+
+/* Pesquisa Avançada */
+
+section {
+  background-color: whitesmoke;
+}
+
+#tabela_inf p {
+  margin: 5px;
+}
+
+#pesquisa_avançada {
+  max-width: 450px;
+}
+
+.price_range {
+  width: 50px;
+}
+form input {
+  width: 97.5%;
+}
+
+form select {
+  width: 100%;
+}
+
+#product_description {
+  width: 96%;
+}
+
+input[type="submit"] {
+  background-color: grey;
+  width: 100%;
+}

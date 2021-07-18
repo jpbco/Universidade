@@ -1,0 +1,371 @@
+exp2:
+	beq $a0, 0, end_exp2
+	nop
+	move $t0, $a0
+	li $v0, 1
+loop_exp2:
+
+	sll $v0, $v0, 1	
+	subi $t0, $t0, 1
+	bnez $t0, loop_exp2
+	nop
+	jr $ra
+	nop
+end_exp2:
+	li $v0, 1
+	jr $ra
+	nop
+
+----------------------------------------
+collatz:
+    addi $sp, $sp, -16
+    sw $ra, 0($sp)
+    li $t1, 0
+    li $t0, 1
+    sw $a0, 12($sp)
+    sw $t0, 4($sp)
+    sw $t1, 8($sp)
+    beq $a0, $t0, L
+    nop
+    sw $t0, 4($sp)
+    sw $t1, 8($sp)
+loop:
+    sw $t0, 4($sp)
+    sw $t1, 8($sp)
+    jal f
+    nop
+    lw $t0, 4($sp)
+    lw $t1, 8($sp)
+    addi $t1, $t1, 1
+    sw $t0, 4($sp)
+    sw $t1, 8($sp)
+    beq $v0, $t0, L
+    nop
+    move $a0, $v0
+    j loop
+    nop
+
+L:
+    lw $t0, 4($sp)
+    lw $t1, 8($sp)
+    lw $ra, 0($sp)
+    addi $sp, $sp, 16
+    move $v0, $t1
+    jr $ra
+    nop
+
+------------------------------
+count_words:
+	subi $sp, $sp, 8
+	sw $ra, 0($sp)
+	sw $a0, 4($sp)
+	li $v0, 1 # v0 = ???
+	
+  
+count_words_loop: # loop:
+	lb $t0, 0($a0)  #   read char
+  	beqz $t0, end#   if nullchar => end of string
+  	nop
+  	beq $t0, 0x20, counter_inc#   if space    => count word (v0++)
+  	addi $a0, $a0, 1
+  	j count_words_loop #   repeat loop
+  	nop
+counter_inc:
+	addi $v0, $v0, 1
+	j count_words_loop
+	nop
+end:
+	
+	lw $ra, 0($sp)
+	lw $a0, 4($sp)
+	addi $sp, $sp, 8
+    jr $ra
+    nop
+  # return result
+  -------------------------------------------
+  find:
+  # your code here...
+  li $v0, 0
+find_loop:
+    beqz $a2, end
+    nop
+    lw $t0, 0($a1)
+    beq $t0, $a0, end
+    nop
+    addi $a1, $a1, 4
+    addi $v0, $v0, 1
+   subi $a2, $a2, 1
+    bnez $a2, find_loop
+    nop
+     li $v0, -1
+end:
+	jr $ra
+	nop
+------------------------------------------------
+to_upper:
+	lb $t0, 0($a0)
+	blt $t0, 'a', converte
+	bgt $t0, 'z', converte
+	nop
+	subi $t0, $t0, 32
+	sb $t0, 0($a0)
+converte:
+	addi $a0, $a0, 1
+	bnez $t0, to_upper
+	nop
+
+	jr $ra
+	nop
+------------------------------------------------
+to_lower:
+	lb $t0, 0($a0)
+	blt $t0, 'A', converte
+	bgt $t0, 'Z', converte
+	nop
+	addi $t0, $t0, 32
+	sb $t0, 0($a0)
+converte:
+	addi $a0, $a0, 1
+	bnez $t0, to_lower
+	nop
+
+	jr $ra
+	nop
+-------------------------------------------------
+minimum:
+	lw $v0, 0($a0)
+minimum_loop:
+	lw $t0, 0($a0)
+	blt $t0, $v0, change
+	nop
+	addi $a0, $a0, 4
+	subi $a1, $a1, 1
+	bnez $a1, minimum_loop
+	nop
+	j exit
+	nop
+	
+change:
+	move $v0, $t0
+	j minimum_loop
+	nop
+exit:
+
+	jr $ra
+	nop
+--------------------------------------------------
+maximum:
+	lw $v0, 0($a0)
+maximum_loop:
+	lw $t0, 0($a0)
+	bgt $t0, $v0, change
+	nop
+	addi $a0, $a0, 4
+	subi $a1, $a1, 1
+	bnez $a1, maximum_loop
+	nop
+	j exit
+	nop
+	
+change:
+	move $v0, $t0
+	j maximum_loop
+	nop
+exit:
+
+	jr $ra
+	nop
+--------------------------------------------------
+count_lines:
+	subi $sp, $sp, 8
+	sw $ra, 0($sp)
+	sw $a0, 4($sp)
+	li $v0, 0
+	
+count_lines_loop: 
+	lb $t0, 0($a0)  
+  	beqz $t0, end
+  	nop
+  	beq $t0, 0xa, counter_inc
+  	addi $a0, $a0, 1
+  	j count_lines_loop 
+  	nop
+counter_inc:
+	addi $v0, $v0, 1
+	j count_lines_loop
+	nop
+end:
+	
+	lw $ra, 0($sp)
+	lw $a0, 4($sp)
+	addi $sp, $sp, 8
+    jr $ra
+    nop
+  # return result
+-----------------------------------------------
+strlen:     
+    move $v0, $0
+loop:
+    lb  $t0, ($a0)       
+    beq $t0, 0, end      
+    nop  
+    addi $v0,$v0,1
+    addi $a0, $a0, 1      
+    j   loop
+    nop
+end:
+	jr $ra
+    nop
+-----------------------------------------------
+sum:
+	addi $sp,$sp,-8
+	sw $ra,0($sp)
+	sw $t0,4($sp)
+	move $v0, $zero
+	beq $a1, $zero, L
+	nop
+	lw $t0, 0($a0)
+	addi $a0, $a0, 4
+	addi $a1, $a1, -1
+	jal sum
+	nop
+	add $v0, $v0, $t0
+	L:
+	lw $ra,0($sp)
+	addi $sp,$sp,4
+	lw $t0,0($sp)
+	addi $sp,$sp,4
+	jr $ra
+	nop
+---------------------------------------------
+innerproduct:
+	move $v0, $0
+innerproduct_loop:
+	lw $t0, 0($a0)
+	lw $t1, 0($a1)
+	addi $a0, $a0, 4
+	addi $a1, $a1, 4
+	subi $a2, $a2, 1
+	mult $t0, $t1
+	mflo $t3
+	add $v0, $v0, $t3
+	bnez $a2, innerproduct_loop
+	nop
+	
+	jr $ra
+	nop
+---------------------------------------------	
+
+#recursiva
+factorial:
+    subi $sp, $sp, 8
+    sw $ra, 0($sp)
+    sw $s0, 4($sp)
+    
+    li $v0, 1
+    beq $a0, 0, factorial_end
+    nop
+    
+    move $s0, $a0
+    subi $a0, $a0, 1
+    jal factorial   # chamada recursiva
+    nop
+    
+    mul $v0, $s0, $v0
+    
+factorial_end:
+	lw $ra, 0($sp)
+    lw $s0, 4($sp)
+    addi $sp, $sp, 8
+    jr $ra
+    nop
+-------------------------------------------------
+# reordenar sem loads nem stores
+sll $t1, $t0, 24
+srl $t2, $t0, 24
+or $t3, $t1, $t2
+sll $t1, $t0, 16
+srl $t1, $t1, 24
+sll $t1, $t1, 16
+sll $t2, $t0, 8
+srl $t2, $t2, 24
+sll $t2, $t2, 8
+or $t4, $t2, $t1
+or $t0, $t3, $t4
+---------------------------------------------
+#reordenar com loads e stores
+lw $t1, 0($t0)
+sb $t1, 3($t0)
+srl $t1, $t1, 8
+sb $t1, 2($t0)
+srl $t1, $t1, 8
+
+sb $t1, 1($t0)
+srl $t1, $t1, 8
+sb $t1, 0($t0)
+srl $t1, $t1, 8
+-------------------------------------------------
+#set de um bit a 1 mantendo o resto inalterado
+
+#exemplo bit 31
+
+lui $t1, 0x8000    
+or $s4, $s4, $t1
+-------------------------------------------------
+# t2 = 2 * t0 + 3 * (t0-t1)
+
+add $t2, $t0, $t0
+add $t2, $t2, $t0
+add $t2, $t2, $t0
+add $t2, $t2, $t0
+sub $t2, $t2, $t1
+sub $t2, $t2, $t1
+sub $t2, $t2, $t1
+
+-------------------------------------------------
+# COLOCAR NO BIT 0
+# Escreva um pedaço de código que coloque o 
+# bit 6 do registo $t5 no bit 0 (menos significativo) do registo $s4. 
+# Os restantes bits de $s4 deverão ser zeros.
+#Por exemplo, se $t5 tiver o valor 0xf0000040, então o registo $s4 deverá ficar a 1.
+sll $s2, $t5, 25  #(31-6)
+srl $s2, $s2, 31
+or $s4, $zero, $s2
+-------------------------------------------------
+#xor swap
+
+xor $t0, $t0, $t1
+xor $t1, $t1, $t0
+xor $t0, $t0, $t1
+
+----------------------------------------------
+# encontrar o primeiro num nao nulo
+
+move $t1, $a1
+L:      
+lw    $t0, 0($a0) 
+addi $t1, $t1, -1      
+beq   $t0, $zero, L 
+addi $a0, $a0, 4 
+sub $v0, $a1, $t1 
+addi $v0, $v0, -1
+-----------------------------
+converte_string:
+	subi $sp, $sp, 8
+    sw $ra, 0($sp)
+    sw $s0, 4($sp)
+    
+    move $s0, $a0
+L1:
+    lb $a0, 0($s0)
+    jal converte_char
+    nop
+    sb $v0, 0($s0)
+    bne $v0, $zero, L1
+    addi $s0, $s0, 1
+    
+    lw $ra, 0($sp)
+    lw $s0, 4($sp)
+    addi $sp, $sp, 8
+    jr $ra
+    nop
